@@ -5,9 +5,9 @@
 } */
 
 enum Role {
-    Admin = "ADMIN",
-    Editor = "EDITOR",
-    Viewer = "VIEWER"
+    eAdmin = "ADMIN",
+    eEditor = "EDITOR",
+    eViewer = "VIEWER"
 }    
 
 const myRole: Role = Role.Admin;

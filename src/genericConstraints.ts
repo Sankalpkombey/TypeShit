@@ -15,7 +15,7 @@ function getProperty<T, K extends keyof T>(obj: T, key: K): T[K] {
  2. -- K extends keyof T — this says "K can be any type, as long as it's one of T's actual keys." This is the "constraint" — K isn't fully free like T, it's restricted to a specific set.
  3. -- T[K] — "the type of the property at key K on T." This is called an indexed access type. If K is "id", T[K] is number. If K is "name", T[K] is string. */
 
-const user: User = { id: 1, name: "Bob", email: "bob@test.com", isActive: true };
+const Auser: User = { id: 1, name: "Bob", email: "bob@test.com", isActive: true };
 
 const Username = getProperty(user, "name");
 const isActive = getProperty(user, "isActive");
